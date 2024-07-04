@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="scenePane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.CallPageController">
+   <children>
+      <Pane prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: white;" stylesheets="@../Styles/Main.css">
+         <children>
+            <Pane layoutX="-119.0" layoutY="-162.0" prefHeight="467.0" prefWidth="780.0" rotate="29.1" style="-fx-background-color: F0323C; -fx-background-radius: 60;">
+               <children>
+                  <Label layoutX="221.0" layoutY="166.0" prefHeight="128.0" prefWidth="508.0" rotate="-29.5" styleClass="callPageText" stylesheets="@../Styles/Main.css" text="Don't worry! Ambulance and doctors are on the way!" textFill="WHITE" wrapText="true" />
+                  <ImageView fitHeight="217.0" fitWidth="241.0" layoutX="516.0" layoutY="224.0" pickOnBounds="true" preserveRatio="true" rotate="-29.5">
+                     <image>
+                        <Image url="@../Resources/icons8_ambulance_500px.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Pane layoutX="-8.0" layoutY="475.0" prefHeight="164.0" prefWidth="816.0" style="-fx-background-color: F0323C; -fx-background-radius: 30;">
+               <children>
+                  <Label layoutX="397.0" layoutY="58.0" text="OR" textFill="BISQUE">
+                     <font>
+                        <Font name="Segoe UI Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="200.0" layoutY="1.0" prefHeight="61.0" prefWidth="173.0" text="*(Track the ambulance here.)" textFill="BISQUE" wrapText="true">
+                     <font>
+                        <Font name="Arial Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Button layoutX="205.0" layoutY="50.0" mnemonicParsing="false" onAction="#trackPage" prefHeight="46.0" prefWidth="173.0" styleClass="TrackBtn" text="Track">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></Button>
+                  <Button layoutX="441.0" layoutY="50.0" mnemonicParsing="false" onAction="#cancelRequest" prefHeight="46.0" prefWidth="173.0" styleClass="TrackBtn" text="Cancel Request">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></Button>
+               </children>
+            </Pane>
+            <Label layoutX="20.0" layoutY="353.0" prefHeight="61.0" prefWidth="300.0" text="*(While on the wait could you please fill out the basic info of the patient.)" textFill="#f0323c" wrapText="true">
+               <font>
+                  <Font name="Segoe UI Bold" size="12.0" />
+               </font>
+            </Label>
+            <Button fx:id="goToBasicInfoButton" layoutX="20.0" layoutY="403.0" mnemonicParsing="false" onAction="#basicInfoPage" prefHeight="35.0" prefWidth="158.0" styleClass="basicinfo" text="Basic Info">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
