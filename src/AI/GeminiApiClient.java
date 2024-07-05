@@ -8,7 +8,7 @@ import java.net.URL;
 
 public class GeminiApiClient {
 
-    private static final String API_KEY = "AIzaSyAWH4xb8pO5TbnKfJAEVgaW4MU5YExEO_Q";
+    private static final String API_KEY = "YOUR_GEMINI_API_KEY";
 
     public String sendMessage(String userMessage) {
         try {
